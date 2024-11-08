@@ -125,6 +125,16 @@
     "links": [
      {
       "group": "Outputs",
+      "link_doctype": "MPS Scenarios Strategy Result Day",
+      "link_fieldname": "mps_scenarios_strategy"
+     },      
+     {
+      "group": "Outputs",
+      "link_doctype": "MPS Scenarios Strategy Result Day",
+      "link_fieldname": "mps_scenarios_strategy"
+     },
+     {
+      "group": "Outputs",
       "link_doctype": "MPS Scenarios Strategy Result",
       "link_fieldname": "mps_scenarios_strategy"
      },
@@ -136,11 +146,6 @@
      {
       "group": "Inputs",
       "link_doctype": "MPS Scenarios Strategy Input Sales Order",
-      "link_fieldname": "mps_scenarios_strategy"
-     },
-     {
-      "group": "Inputs",
-      "link_doctype": "MPS Scenarios Strategy Input Stock",
       "link_fieldname": "mps_scenarios_strategy"
      },
      {
