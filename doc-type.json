@@ -1,0 +1,199 @@
+{
+    "actions": [],
+    "autoname": "MPSSSTRG-.#",
+    "creation": "2024-07-25 13:33:30.734726",
+    "doctype": "DocType",
+    "engine": "InnoDB",
+    "field_order": [
+     "general_tab",
+     "mps_scenarios",
+     "description",
+     "status",
+     "preferences_section",
+     "demand_criteria",
+     "column_break_jovt",
+     "falta_fazer_section",
+     "resource_allocation_method",
+     "availability_schedule",
+     "maximum_inventory_cost",
+     "column_break_xizy",
+     "consider_finite_capacity_factory",
+     "ignore_planned_orders",
+     "ignore_firm_planned_orders"
+    ],
+    "fields": [
+     {
+      "fieldname": "general_tab",
+      "fieldtype": "Tab Break",
+      "label": "General"
+     },
+     {
+      "fieldname": "mps_scenarios",
+      "fieldtype": "Link",
+      "in_list_view": 1,
+      "in_standard_filter": 1,
+      "label": "MPS Scenarios",
+      "options": "MPS Scenarios",
+      "reqd": 1
+     },
+     {
+      "fieldname": "description",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "in_standard_filter": 1,
+      "label": "Description",
+      "reqd": 1
+     },
+     {
+      "default": "In Progress",
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "in_list_view": 1,
+      "in_standard_filter": 1,
+      "label": "Status",
+      "options": "In Progress\nProcessed\nClosed"
+     },
+     {
+      "default": "Forecast + Sales Order",
+      "fieldname": "demand_criteria",
+      "fieldtype": "Select",
+      "label": "Demand Criteria",
+      "options": "Sales Order\nForecast\nForecast + Sales Order"
+     },
+     {
+      "default": "Priority, Delivery Date",
+      "fieldname": "resource_allocation_method",
+      "fieldtype": "Select",
+      "label": "Resource Allocation Method",
+      "options": "Priority, Delivery Date\nOrders with Highest Revenue"
+     },
+     {
+      "fieldname": "availability_schedule",
+      "fieldtype": "Link",
+      "label": "Availability Schedule",
+      "link_filters": "[[\"Availability Schedule\",\"enabled\",\"=\",1],[\"Availability Schedule\",\"type\",\"=\",\"Productive\"]]",
+      "options": "Availability Schedule",
+      "reqd": 1
+     },
+     {
+      "default": "0",
+      "fieldname": "maximum_inventory_cost",
+      "fieldtype": "Float",
+      "label": "Maximum Inventory Cost",
+      "non_negative": 1
+     },
+     {
+      "default": "0",
+      "description": "Option to exclude released production orders from the MPS calculation or scheduling.",
+      "fieldname": "ignore_planned_orders",
+      "fieldtype": "Check",
+      "label": "Ignore Released Orders"
+     },
+     {
+      "default": "0",
+      "description": "Option to exclude firm planned production orders from the MPS calculation or scheduling.",
+      "fieldname": "ignore_firm_planned_orders",
+      "fieldtype": "Check",
+      "label": "Ignore Firm Planned Orders"
+     },
+     {
+      "fieldname": "column_break_jovt",
+      "fieldtype": "Column Break"
+     },
+     {
+      "fieldname": "preferences_section",
+      "fieldtype": "Section Break",
+      "label": "Preferences"
+     },
+     {
+      "fieldname": "falta_fazer_section",
+      "fieldtype": "Section Break",
+      "label": "Falta fazer"
+     },
+     {
+      "fieldname": "column_break_xizy",
+      "fieldtype": "Column Break"
+     },
+     {
+      "default": "0",
+      "fieldname": "consider_finite_capacity_factory",
+      "fieldtype": "Check",
+      "label": "Consider Finite Capacity Factory"
+     }
+    ],
+    "index_web_pages_for_search": 1,
+    "links": [
+     {
+      "group": "Inputs",
+      "link_doctype": "MPS Scenarios Strategy Input Forecast",
+      "link_fieldname": "mps_scenarios_strategy"
+     },
+     {
+      "group": "Outputs",
+      "link_doctype": "MPS Scenarios Strategy Result Day",
+      "link_fieldname": "mps_scenarios_strategy"
+     },
+     {
+      "group": "Outputs",
+      "link_doctype": "MPS Scenarios Strategy Result",
+      "link_fieldname": "mps_scenarios_strategy"
+     },
+     {
+      "group": "Outputs",
+      "link_doctype": "MPS Scenarios Strategy Result Orders",
+      "link_fieldname": "mps_scenarios_strategy"
+     },
+     {
+      "group": "Inputs",
+      "link_doctype": "MPS Scenarios Strategy Input Sales Order",
+      "link_fieldname": "mps_scenarios_strategy"
+     },
+     {
+      "group": "Inputs",
+      "link_doctype": "MPS Scenarios Strategy Input Stock",
+      "link_fieldname": "mps_scenarios_strategy"
+     },
+     {
+      "group": "Inputs",
+      "link_doctype": "MPS Scenarios Strategy Input Orders",
+      "link_fieldname": "mps_scenarios_strategy"
+     }
+    ],
+    "modified": "2024-11-06 12:32:19.311456",
+    "modified_by": "Administrator",
+    "module": "NXcore",
+    "name": "MPS Scenarios Strategy",
+    "naming_rule": "Expression (old style)",
+    "owner": "Administrator",
+    "permissions": [
+     {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+     }
+    ],
+    "sort_field": "creation",
+    "sort_order": "DESC",
+    "states": [
+     {
+      "color": "Blue",
+      "title": "In Progress"
+     },
+     {
+      "color": "Green",
+      "title": "Processed"
+     },
+     {
+      "color": "Red",
+      "title": "Closed"
+     }
+    ],
+    "track_changes": 1
+   }
