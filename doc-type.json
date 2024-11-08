@@ -140,7 +140,7 @@
      },
      {
       "group": "Outputs",
-      "link_doctype": "MPS Scenarios Strategy Result Orders",
+      "link_doctype": "main",
       "link_fieldname": "mps_scenarios_strategy"
      },
      {
@@ -160,7 +160,7 @@
      },
      {
       "group": "Inputs",
-      "link_doctype": "MPS Scenarios Strategy Input Orders6",
+      "link_doctype": "MPS Scenarios Strategy Input Orders77",
       "link_fieldname": "mps_scenarios_strategy"
      }
     ],
