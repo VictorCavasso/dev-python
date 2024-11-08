@@ -124,11 +124,6 @@
     "index_web_pages_for_search": 1,
     "links": [
      {
-      "group": "Inputs",
-      "link_doctype": "MPS Scenarios Strategy Input Forecast",
-      "link_fieldname": "mps_scenarios_strategy"
-     },
-     {
       "group": "Outputs",
       "link_doctype": "MPS Scenarios Strategy Result Day",
       "link_fieldname": "mps_scenarios_strategy"
