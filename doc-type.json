@@ -145,12 +145,22 @@
      },
      {
       "group": "Inputs",
+      "link_doctype": "MPS Scenarios Strategy Input Stock",
+      "link_fieldname": "mps_scenarios_strategy"
+     },
+     {
+      "group": "Inputs",
+      "link_doctype": "new feature",
+      "link_fieldname": "mps_scenarios_strategy"
+     },
+     {
+      "group": "Inputs",
       "link_doctype": "MPS Scenarios Strategy Input Orders",
       "link_fieldname": "mps_scenarios_strategy"
      },
      {
       "group": "Inputs",
-      "link_doctype": "MPS Scenarios Strategy Input Orders3",
+      "link_doctype": "MPS Scenarios Strategy Input Orders4",
       "link_fieldname": "mps_scenarios_strategy"
      }
     ],
