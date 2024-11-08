@@ -152,6 +152,11 @@
       "group": "Inputs",
       "link_doctype": "MPS Scenarios Strategy Input Orders",
       "link_fieldname": "mps_scenarios_strategy"
+     },
+     {
+      "group": "Inputs",
+      "link_doctype": "MPS Scenarios Strategy Input Orders2",
+      "link_fieldname": "mps_scenarios_strategy"
      }
     ],
     "modified": "2024-11-06 12:32:19.311456",
